@@ -7,25 +7,26 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
     # Create variable, input_string that asks the user to input, "Enter an equation > "
     # Split string_input into a list at ' ' delimiter
     # If input_string is 'q'
-    # Break from the loop
+        # Break from the loop
     # Otherwise,
-    # If tokens at index 0 is '+'
-    # Call the add function passing in two arguments, floats of tokens[1], [2]
-    # Else if tokens at index 0 is '-'
-    # Call the subtract function passing in two arguments, floats of tokens[1], [2]
-    # Otherwise if tokens at index 0 is '*'
-    # Call the multiply function passing in two arguments, floats of tokens[1], [2]
-    # Otherwise if tokens at index 0 is '/'
-    # Call the divide function passing in two arguments, floats of tokens[1], [2]
-    # Otherwise if tokens at index 0 is 'square'
-    # Call the square function passing in one argument, float of tokens[1]
-    # Otherwise if tokens at index 0 is 'cube'
-    # Call the cube function passing in one argument, float of tokens[1]
-    # Otherwise if tokens at index 0 is 'pow'
-    # Call the power function passing in two arguments, floats of tokens[1], [2]
-    # Otherwise if tokens at index 0 is 'mod', 
-    # Call the mod function passing in two arguments, floats of tokens[1], [2]
-    # Otherwise print invalid equation, try again
+        # If tokens at index 0 is '+'
+            # Call the add function passing in two arguments, floats of tokens[1], [2]
+        # Else if tokens at index 0 is '-'
+            # Call the subtract function passing in two arguments, floats of tokens[1], [2]
+        # Otherwise if tokens at index 0 is '*'
+            # Call the multiply function passing in two arguments, floats of tokens[1], [2]
+        # Otherwise if tokens at index 0 is '/'
+            # Call the divide function passing in two arguments, floats of tokens[1], [2]
+        # Otherwise if tokens at index 0 is 'square'
+            # Call the square function passing in one argument, float of tokens[1]
+        # Otherwise if tokens at index 0 is 'cube'
+            # Call the cube function passing in one argument, float of tokens[1]
+        # Otherwise if tokens at index 0 is 'pow'
+            # Call the power function passing in two arguments, floats of tokens[1], [2]
+        # Otherwise if tokens at index 0 is 'mod', 
+            # Call the mod function passing in two arguments, floats of tokens[1], [2]
+        # Otherwise
+            # Print invalid equation, try again
 while True:
     input_string = input("Enter an equation > ")
     tokens = input_string.split(' ')
